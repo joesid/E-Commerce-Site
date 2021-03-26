@@ -18,7 +18,7 @@ export default class Navbar extends Component {
                    <img src={logo} alt="store" className="navbar-brand"/> 
                  </Link>
                  <ul className="navbar-nav align-items-center">
-                   <li className = "nav=item ml-5" >
+                   <li className = "nav-item ml-5" >
                       <Link to="/ProductList" className="nav-link">
                          products
                       </Link>
@@ -61,6 +61,10 @@ background:var(--mainBlue);
    color:var(--mainWhite)!important;
    font-size:1.3rem;
    text-transform:capitalize;
-
+}
+@media (max-width: 576px){
+   .navbar-nav{
+      flex-direction: row !important;
+   }
 }
 `; 
